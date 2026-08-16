@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }}</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(90deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .25)),
+                url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=80")
+                center / cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+        }
+
+        .category-card {
+            border: 0;
+            transition: transform .2s ease, box-shadow .2s ease;
+            overflow: hidden;
+        }
+
+        .category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .12);
+        }
+
+        .category-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .brand-text {
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold brand-text" href="/">
+            DREAMCAR
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cars">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+
+                <span class="badge text-bg-light text-dark mb-3 px-3 py-2">
+                    FIND YOUR PERFECT RIDE
+                </span>
+
+                <h1>Choose Your Dream Car.</h1>
+
+                <p class="lead mt-4">
+                    Explore the cars you've always dreamed of owning.
+                    Find the perfect combination of performance, design,
+                    comfort, and personality.
+                </p>
+
+                <div class="d-flex gap-3 flex-wrap mt-4">
+                    <a href="#cars" class="btn btn-primary btn-lg px-4">
+                        Explore Cars
+                    </a>
+
+                    <a href="/settings" class="btn btn-outline-light btn-lg px-4">
+                        Settings
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Categories -->
+<section id="cars" class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="text-primary fw-semibold">EXPLORE</span>
+            <h2 class="display-5 fw-bold mt-2">
+                What's your dream?
+            </h2>
+            <p class="text-muted">
+                Start by choosing the type of car that fits your lifestyle.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Sports -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card category-card h-100">
+                    <img
+                        src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80"
+                        class="card-img-top"
+                        alt="Sports car"
+                    >
+
+                    <div class="card-body p-4">
+                        <h3 class="card-title fw-bold">Sports Cars</h3>
+
+                        <p class="card-text text-muted">
+                            Raw performance, aggressive styling, and
+                            an unforgettable driving experience.
+                        </p>
+
+                        <a href="#" class="btn btn-outline-primary">
+                            Explore Sports Cars
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Luxury -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card category-card h-100">
+                    <img
+                        src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80"
+                        class="card-img-top"
+                        alt="Luxury car"
+                    >
+
+                    <div class="card-body p-4">
+                        <h3 class="card-title fw-bold">Luxury Cars</h3>
+
+                        <p class="card-text text-muted">
+                            Premium materials, sophisticated technology,
+                            and first-class comfort.
+                        </p>
+
+                        <a href="#" class="btn btn-outline-primary">
+                            Explore Luxury Cars
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SUVs -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card category-card h-100">
+                    <img
+                        src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80"
+                        class="card-img-top"
+                        alt="SUV"
+                    >
+
+                    <div class="card-body p-4">
+                        <h3 class="card-title fw-bold">SUVs</h3>
+
+                        <p class="card-text text-muted">
+                            Space, versatility, and capability without
+                            sacrificing style.
+                        </p>
+
+                        <a href="#" class="btn btn-outline-primary">
+                            Explore SUVs
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="bg-dark text-white py-5">
+    <div class="container text-center">
+
+        <h2 class="display-6 fw-bold">
+            Ready to find your dream car?
+        </h2>
+
+        <p class="lead text-white-50 mt-3">
+            Your perfect car could be just a few clicks away.
+        </p>
+
+        <a href="#cars" class="btn btn-primary btn-lg px-5 mt-3">
+            Start Exploring
+        </a>
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-4 bg-black text-white-50">
+    <div class="container text-center">
+        <small>
+            &copy; 2026 DreamCar. Find the car you've always wanted.
+        </small>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+></script>
+
+</body>
+</html>
