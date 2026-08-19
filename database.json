@@ -1,0 +1,61 @@
+{
+    "electric_cars":
+    [
+         {
+            "make": "BMW",
+            "model": "i4",
+            "short_description": "A sporty electric gran coupe built for drivers who want efficiency without sacrificing style.",
+            "km_range": "590",
+            "drive": "RWD",
+            "type": "Coupe",
+            "img_link": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+        },
+        {
+            "make": "PORSCHE",
+            "model": "Taycan",
+            "short_description": "A performance-focused electric sports car with unmistakable Porsche character.",
+            "km_range": "500+ ",
+            "drive": "AWD",
+            "type": "Sport",
+            "img_link": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80"
+        },
+        {
+            "make": "AUDI",
+            "model": "e-tron GT",
+            "short_description": "Premium electric performance wrapped in a sophisticated and futuristic design.",
+            "km_range": "480",
+            "drive": "AWD",
+            "type": "GT",
+            "img_link": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+        },
+       
+        {
+            "make": "MERCEDES-BENZ",
+            "model": "EQE",
+            "short_description": "Effortless luxury, advanced technology, and a refined electric driving experience.",
+            "km_range": "600",
+            "drive": "AWD",
+            "type": "Sedan",
+            "img_link": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+        },
+         {
+            "make": "TESLA",
+            "model": "Model 3",
+            "short_description": " A sleek electric sedan combining long range, technology, and impressive performance.",
+            "km_range": "500+",
+            "drive": "AWD",
+            "type": "Sedan",
+            "img_link": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1000&q=80"
+        },
+        {
+            "make": "HYUNDAI",
+            "model": "IONIQ 5",
+            "short_description": "Bold design, spacious practicality, and innovative electric technology for everyday adventures.",
+            "km_range": "500",
+            "drive": "AWD",
+            "type": "SUV",
+            "img_link": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1000&q=80"
+        }
+
+    ]
+}

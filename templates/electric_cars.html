@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }}</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(90deg, rgba(0, 0, 0, .78), rgba(0, 0, 0, .25)),
+                url("https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=2000&q=80")
+                center / cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 650px;
+        }
+
+        /* Car Cards */
+        .car-card {
+            border: 0;
+            overflow: hidden;
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .12);
+        }
+
+        .car-card img {
+            height: 240px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .car-card .card-body {
+            padding: 1.5rem;
+        }
+
+        .car-spec {
+            font-size: .9rem;
+        }
+
+        .car-spec strong {
+            display: block;
+            font-size: 1rem;
+            color: #212529;
+        }
+
+        .brand-text {
+            letter-spacing: 2px;
+        }
+
+        /* Section */
+        .section-label {
+            letter-spacing: 2px;
+        }
+
+        /* Feature cards */
+        .feature-card {
+            border: 0;
+            background: white;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .08);
+        }
+
+        .feature-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #e7f1ff;
+            color: #0d6efd;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        /* Electric badge */
+        .electric-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 2;
+        }
+
+        /* Stats */
+        .stat-number {
+            font-size: 2.25rem;
+            font-weight: 800;
+        }
+
+        /* CTA */
+        .electric-cta {
+            background:
+                linear-gradient(90deg, rgba(0, 0, 0, .92), rgba(0, 0, 0, .7)),
+                url("https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=1800&q=80")
+                center / cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold brand-text" href="/">
+            DREAMCAR
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#electric-cars">
+                        Electric Cars
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings">
+                        Settings
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<!-- Intro -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <span class="text-primary fw-semibold section-label">
+                    ELECTRIC PERFORMANCE
+                </span>
+
+                <h2 class="display-5 fw-bold mt-2">
+                    More than just electric.
+                </h2>
+
+                <p class="lead text-muted mt-3">
+                    Modern electric cars deliver instant torque, impressive
+                    acceleration, quiet cabins, and advanced technology.
+                </p>
+
+                <p class="text-muted">
+                    Whether you're looking for an everyday commuter, a
+                    performance machine, or a premium electric experience,
+                    there's an EV built for your lifestyle.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="row g-3 text-center">
+
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-4 shadow-sm">
+                            <div class="stat-number text-primary">
+                                0–100
+                            </div>
+                            <div class="text-muted">
+                                Instant acceleration
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-4 shadow-sm">
+                            <div class="stat-number text-primary">
+                                500+
+                            </div>
+                            <div class="text-muted">
+                                km of range*
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-4 shadow-sm">
+                            <div class="stat-number text-primary">
+                                0
+                            </div>
+                            <div class="text-muted">
+                                Tailpipe emissions
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-4 shadow-sm">
+                            <div class="stat-number text-primary">
+                                24/7
+                            </div>
+                            <div class="text-muted">
+                                Connected technology
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Electric Cars -->
+<section id="electric-cars" class="py-5 bg-white">
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-primary fw-semibold section-label">
+                EXPLORE
+            </span>
+
+            <h2 class="display-5 fw-bold mt-2">
+                Find your electric dream car.
+            </h2>
+
+            <p class="text-muted">
+                Explore some of the most exciting electric cars on the road.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            {% for car in electric_cars %}
+
+            <!-- Tesla -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card car-card h-100">
+
+                    <div class="position-relative">
+
+                        <span class="badge text-bg-primary electric-badge">
+                            ELECTRIC
+                        </span>
+
+                        <img
+                            src='{{ car["img_link"] }}'
+                            class="card-img-top"
+                            alt="Modern electric car"
+                        >
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="text-primary small fw-semibold">
+                            {{ car["make"] }}
+                        </span>
+
+                        <h3 class="card-title fw-bold mt-1">
+                            {{ car["model"] }}
+                        </h3>
+
+                        <p class="text-muted">
+                            {{ car["short_description"] }}
+                        </p>
+
+
+                        <div class="row g-3 mt-2 mb-4">
+
+                            <div class="col-4 car-spec">
+                                <small class="text-muted">
+                                    Range
+                                </small>
+                                <strong>
+                                    {{ car["km_range"] }} km
+                                </strong>
+                            </div>
+
+                            <div class="col-4 car-spec">
+                                <small class="text-muted">
+                                    Drive
+                                </small>
+                                <strong>
+                                    {{ car["drive"] }}
+                                </strong>
+                            </div>
+
+                            <div class="col-4 car-spec">
+                                <small class="text-muted">
+                                    Type
+                                </small>
+                                <strong>
+                                    {{ car["type"] }}
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <!-- <a href="#" class="btn btn-outline-primary">
+                            View Car
+                        </a> -->
+
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+            
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Why Electric -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-primary fw-semibold section-label">
+                WHY GO ELECTRIC?
+            </span>
+
+            <h2 class="display-5 fw-bold mt-2">
+                Built for the road ahead.
+            </h2>
+
+            <p class="text-muted">
+                Electric driving is about more than efficiency.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="feature-card rounded-4 p-4 h-100">
+
+                    <div class="feature-icon mb-4">
+                        ⚡
+                    </div>
+
+                    <h4 class="fw-bold">
+                        Instant Performance
+                    </h4>
+
+                    <p class="text-muted mb-0">
+                        Electric motors deliver immediate torque for
+                        smooth and exhilarating acceleration.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="feature-card rounded-4 p-4 h-100">
+
+                    <div class="feature-icon mb-4">
+                        ♻
+                    </div>
+
+                    <h4 class="fw-bold">
+                        Efficient Driving
+                    </h4>
+
+                    <p class="text-muted mb-0">
+                        Enjoy an efficient driving experience with zero
+                        tailpipe emissions while you're on the road.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="feature-card rounded-4 p-4 h-100">
+
+                    <div class="feature-icon mb-4">
+                        ◉
+                    </div>
+
+                    <h4 class="fw-bold">
+                        Smart Technology
+                    </h4>
+
+                    <p class="text-muted mb-0">
+                        Connected systems, advanced driver assistance,
+                        and intelligent charging make every journey easier.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="electric-cta text-white py-5">
+
+    <div class="container text-center py-4">
+
+        <h2 class="display-5 fw-bold">
+            Ready to go electric?
+        </h2>
+
+        <p class="lead text-white-50 mt-3">
+            Find the electric car that matches your dream.
+        </p>
+
+        <a
+            href="#electric-cars"
+            class="btn btn-primary btn-lg px-5 mt-3"
+        >
+            Explore Electric Cars
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="py-4 bg-black text-white-50">
+
+    <div class="container text-center">
+
+        <small>
+            &copy; 2026 DreamCar. Find the car you've always wanted.
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslZslcN9s9s9s9"
+    crossorigin="anonymous"
+></script>
+
+</body>
+</html>
