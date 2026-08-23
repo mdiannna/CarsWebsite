@@ -44,6 +44,32 @@ async def electric_cars(request: Request):
     )
 
 
+@app.get("/sports-cars", response_class=HTMLResponse)
+async def sports_cars(request: Request):
+    sports_cars = load_item("sports_cars")
+    return templates.TemplateResponse(
+        "sports_cars.html",
+        {
+            "request": request,
+            "title": "Sports Cars",
+            "message": "Welcome to Sports Cars page!",
+            "sports_cars": sports_cars
+        },
+    )
+
+@app.get("/luxury-cars", response_class=HTMLResponse)
+async def luxury_cars(request: Request):
+    luxury_cars = load_item("luxury_cars")
+    return templates.TemplateResponse(
+        "luxury_cars.html",
+        {
+            "request": request,
+            "title": "Luxury Cars",
+            "message": "Welcome to Luxury Cars page!",
+            "luxury_cars": luxury_cars
+        },
+    )
+
 @app.get("/api")
 async def api():
     return {

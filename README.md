@@ -7,3 +7,7 @@ A website for choosing your dream car with a clean and user-friendly interface.
 ![CarsWebsite Screenshot 1](https://github.com/mdiannna/CarsWebsite/blob/main/screenshots/screenshot1.png)
 
 ![CarsWebsite Screenshot 2](https://github.com/mdiannna/CarsWebsite/blob/main/screenshots/screenshot2.png)
+
+![CarsWebsite Screenshot 3](https://github.com/mdiannna/CarsWebsite/blob/main/screenshots/screenshot3.png)
+
+![CarsWebsite Screenshot 4](https://github.com/mdiannna/CarsWebsite/blob/main/screenshots/screenshot4.png)

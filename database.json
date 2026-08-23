@@ -1,61 +1,163 @@
 {
-    "electric_cars":
-    [
-         {
-            "make": "BMW",
-            "model": "i4",
-            "short_description": "A sporty electric gran coupe built for drivers who want efficiency without sacrificing style.",
-            "km_range": "590",
-            "drive": "RWD",
-            "type": "Coupe",
-            "img_link": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
-        },
-        {
-            "make": "PORSCHE",
-            "model": "Taycan",
-            "short_description": "A performance-focused electric sports car with unmistakable Porsche character.",
-            "km_range": "500+ ",
-            "drive": "AWD",
-            "type": "Sport",
-            "img_link": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80"
-        },
-        {
-            "make": "AUDI",
-            "model": "e-tron GT",
-            "short_description": "Premium electric performance wrapped in a sophisticated and futuristic design.",
-            "km_range": "480",
-            "drive": "AWD",
-            "type": "GT",
-            "img_link": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
-        },
-       
-        {
-            "make": "MERCEDES-BENZ",
-            "model": "EQE",
-            "short_description": "Effortless luxury, advanced technology, and a refined electric driving experience.",
-            "km_range": "600",
-            "drive": "AWD",
-            "type": "Sedan",
-            "img_link": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
-        },
-         {
-            "make": "TESLA",
-            "model": "Model 3",
-            "short_description": " A sleek electric sedan combining long range, technology, and impressive performance.",
-            "km_range": "500+",
-            "drive": "AWD",
-            "type": "Sedan",
-            "img_link": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1000&q=80"
-        },
-        {
-            "make": "HYUNDAI",
-            "model": "IONIQ 5",
-            "short_description": "Bold design, spacious practicality, and innovative electric technology for everyday adventures.",
-            "km_range": "500",
-            "drive": "AWD",
-            "type": "SUV",
-            "img_link": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1000&q=80"
-        }
+  "electric_cars": [
+    {
+      "make": "BMW",
+      "model": "i4",
+      "short_description": "A sporty electric gran coupe built for drivers who want efficiency without sacrificing style.",
+      "km_range": "590",
+      "drive": "RWD",
+      "type": "Coupe",
+      "img_link": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "PORSCHE",
+      "model": "Taycan",
+      "short_description": "A performance-focused electric sports car with unmistakable Porsche character.",
+      "km_range": "500+",
+      "drive": "AWD",
+      "type": "Sport",
+      "img_link": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "AUDI",
+      "model": "e-tron GT",
+      "short_description": "Premium electric performance wrapped in a sophisticated and futuristic design.",
+      "km_range": "480",
+      "drive": "AWD",
+      "type": "GT",
+      "img_link": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQE",
+      "short_description": "Effortless luxury, advanced technology, and a refined electric driving experience.",
+      "km_range": "600",
+      "drive": "AWD",
+      "type": "Sedan",
+      "img_link": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "TESLA",
+      "model": "Model 3",
+      "short_description": "A sleek electric sedan combining long range, technology, and impressive performance.",
+      "km_range": "500+",
+      "drive": "AWD",
+      "type": "Sedan",
+      "img_link": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 5",
+      "short_description": "Bold design, spacious practicality, and innovative electric technology for everyday adventures.",
+      "km_range": "500",
+      "drive": "AWD",
+      "type": "SUV",
+      "img_link": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1000&q=80"
+    }
+  ],
 
-    ]
+  "sports_cars": [
+    {
+      "make": "PORSCHE",
+      "model": "911 Carrera",
+      "short_description": "An iconic sports car delivering sharp handling, everyday usability, and legendary performance.",
+      "km_range": "700+",
+      "drive": "RWD",
+      "type": "Sport",
+      "img_link": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "FERRARI",
+      "model": "488 GTB",
+      "short_description": "A dramatic mid-engine supercar combining breathtaking acceleration with precise Italian engineering.",
+      "km_range": "600+",
+      "drive": "RWD",
+      "type": "Supercar",
+      "img_link": "https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "LAMBORGHINI",
+      "model": "Huracán",
+      "short_description": "A bold V10 supercar built around explosive performance, aggressive styling, and thrilling driving dynamics.",
+      "km_range": "550+",
+      "drive": "AWD",
+      "type": "Supercar",
+      "img_link": "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "CHEVROLET",
+      "model": "Corvette C8",
+      "short_description": "A mid-engine American sports car offering exotic proportions and serious performance at an attainable level.",
+      "km_range": "650+",
+      "drive": "RWD",
+      "type": "Sport",
+      "img_link": "https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "ASTON MARTIN",
+      "model": "Vantage",
+      "short_description": "A muscular British sports car blending elegant design with powerful performance and agile handling.",
+      "km_range": "600+",
+      "drive": "RWD",
+      "type": "Sport",
+      "img_link": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "NISSAN",
+      "model": "GT-R",
+      "short_description": "A legendary performance machine combining immense power, advanced all-wheel drive, and everyday usability.",
+      "km_range": "650+",
+      "drive": "AWD",
+      "type": "Sport",
+      "img_link": "https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?auto=format&fit=crop&w=1000&q=80"
+    }
+  ],
+
+  "luxury_cars": [
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "S-Class",
+      "short_description": "A flagship luxury sedan combining exceptional comfort, advanced technology, and sophisticated craftsmanship.",
+      "km_range": "750+",
+      "drive": "AWD",
+      "type": "Sedan",
+      "img_link": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "BMW",
+      "model": "7 Series",
+      "short_description": "A premium executive sedan focused on spacious comfort, refined performance, and cutting-edge technology.",
+      "km_range": "700+",
+      "drive": "AWD",
+      "type": "Sedan",
+      "img_link": "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "MASERATI",
+      "model": "Quattroporte",
+      "short_description": "An elegant Italian luxury sedan pairing distinctive styling with spirited performance and premium craftsmanship.",
+      "km_range": "600+",
+      "drive": "RWD",
+      "type": "Sedan",
+      "img_link": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "ROLLS-ROYCE",
+      "model": "Ghost",
+      "short_description": "An ultra-luxurious sedan offering serene comfort, exquisite materials, and effortless road presence.",
+      "km_range": "600+",
+      "drive": "AWD",
+      "type": "Sedan",
+      "img_link": "https://images.unsplash.com/photo-1631295868223-63265b40d9e4?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "make": "RANGE ROVER",
+      "model": "Range Rover",
+      "short_description": "A premium luxury SUV combining commanding road presence, exceptional comfort, and capable all-terrain performance.",
+      "km_range": "650+",
+      "drive": "AWD",
+      "type": "SUV",
+      "img_link": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=80"
+    }
+  ]
 }
