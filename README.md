@@ -15,3 +15,6 @@ A website for choosing your dream car with a clean and user-friendly interface.
 
 ## Architecture
 ![Architecture](https://github.com/mdiannna/CarsWebsite/blob/main/architecture/architecture.png)
+
+## Planned AI Agent architecture
+![AI Agents](https://github.com/mdiannna/CarsWebsite/blob/main/architecture/Car%20selection%20AI%20Agent.png)
